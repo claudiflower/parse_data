@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-folder_path = "/" # Change to your file name
+folder_path = "/" # Change to your folder path
 combined = pd.DataFrame()
 count = 0
 
