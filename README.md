@@ -1,6 +1,6 @@
 # parse_data
 
-This Python script joins together all files in a folder - intended to combine data tables in `.txt` files with vertical bar `|` delimiters of the following format:
+This Python script _cleans_ and joins together all files in a folder - intended to combine data tables in `.txt` files with vertical bar `|` delimiters of the following format:
 
 ```
 |Method|Alpha ||Beta |
@@ -22,3 +22,16 @@ This combined file is saved in a file called `combined.csv` to be easily accessi
 Change line 4 in `masher.py` to the path to your folder containing the data.
 
 Run in the command line: `python masher.py`
+
+## Side Note
+If you're sure that your data is already cleaned and ready to be merged, you would not need this script.
+
+You can run the following in command line to concatenate your columns horizontally in the folder:
+```
+paste *.txt >> combined.txt
+```
+
+Or the following in command line to concatenate your columns vertically:
+```
+cat *.txt >> combined.txt
+```
