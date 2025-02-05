@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-folder_path = "/Users/claudialihar/Documents/vsc/meganFolders/"
+folder_path = "/" # Change to your file name
 combined = pd.DataFrame()
 count = 0
 
@@ -24,7 +24,7 @@ for filename in os.listdir(folder_path):
             combined = combined.join(df, rsuffix=str(count))
         count += 1
         combined.to_csv('combined.csv', index=False) 
-        print(combined.head())
+        # print(combined.head())
 
         
 
